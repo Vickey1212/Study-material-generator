@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Assistant with Gemini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fas fa-robot"></i> Study Assistant</h1>
+            <p>Powered by Gemini AI</p>
+        </header>
+        
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <div class="message ai-message">
+                    <div class="avatar">AI</div>
+                    <div class="content">
+                        <p>Hello! I'm your AI study assistant. Ask me about any topic and I'll explain it with text and images when helpful.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <div class="input-options">
+                    <button id="image-toggle" class="option-btn active">
+                        <i class="fas fa-image"></i> Include Images
+                    </button>
+                    <button id="pdf-btn" class="option-btn">
+                        <i class="fas fa-file-pdf"></i> Generate PDF
+                    </button>
+                </div>
+                
+                <div class="text-input">
+                    <input type="text" id="user-input" placeholder="Ask about any topic (e.g., 'Explain photosynthesis')">
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
